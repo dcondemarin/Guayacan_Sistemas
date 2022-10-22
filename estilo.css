@@ -1,8 +1,17 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+html {
+    scroll-behavior: smooth;
+    font-family: -apple-system, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
 /*Estilização do Corpo da Página*/
-
-
 body{
-    background: rgb(255, 255, 255);
+    background: rgb(240 227 215);
     margin: 0;
     padding: 0;
     border: 0;
@@ -11,37 +20,47 @@ body{
 }
 /*Estilização da sessão HEADER da página*/
 header{
-    background: #ffffff;
-    
+    background: #444;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-/*Estilização da sessão NAV (navegação da página)*/
-nav{
-    position: absolute;
-    top: 40%;
-    right: 5%;
-   
+header img, .navbar-brand img {
+    width: 120px;
 
 }
+
+main {
+    background-color: #444;
+    text-align: center;
+}
+/*Estilização da sessão NAV (navegação da página)*/
+
+
+
 nav li {
     display: inline; /* alinhar menu */
-    margin: 0 10px 0 50px; /* espaçamento da linha lado direito */
+    font-size: 18px;
+    
 }
 nav a{
     text-transform: uppercase;
-    color:#000000;
-    font-weight: 10pz;
-    font-size: 25px;
+    color: rgb(187, 187, 187);
+    padding: 0 10px;
     text-decoration: none;
-    position: 50px;
 
 }
-nav a:hover{
-    color:#0015ff;
+nav a:hover, nav a:focus, nav a:active{
+    color:#ffe100;
     text-decoration: underline;
+    transition: all 1s; /* da um atraso de 1s no hover*/
 }
 /*Estilização das listas da página*/
 ul{
-    list-style: none;  
+    list-style: none; 
+    
+         
 }
 /*Estilização do Logotipo*/
 .logo_guayacan{
@@ -52,70 +71,129 @@ ul{
 
 }
 .logo{
-    width: 20%;
-    border-radius: 40px;
+    height:auto;
+    width: 100%;
 }
     
 /*Banner */
-.banner{
-    width: 100%;
-    height: 1000px; 
+.banner img{
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
 }
 
-/* estilizando titulo principal */
 
+/* estilizando titulo principal */
+.princ {
+    /* color: #994f4f; */
+    background-color:#f0e3d7;
+}
 .titulo-principal{
+    font: initial;
+    font-style: oblique;
+    text-decoration: underline;
+    background-color: #f0e3d7;
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 2cm;  /* dobro da fonte padrão*/
-    margin: 2cm 0cm 2cm  0;
+    font-size: 45px;  /* dobro da fonte padrão*/
+    margin: 1cm 0cm 1cm  0;
     clear: left;
 }
 
 .principal {
-    color: rgb(0, 0, 0);
-    width: 880px;
-    margin: 0 auto;
-    padding: 2cm 0;
-    background: #ffffff;
+    color: #994f4f;
+    width: 55%;
+    margin: 0 0 60px  0;
+    background-color: #f0e3d7;
     text-align: justify;
+    margin-left: 180px;
+    margin-top: 420px;
+    
 }
 
 .principal em {
-    color: rgb(0, 0, 0);
+    color: #994f4f;
     font-style: italic;
 }
 
 .sobre {
-    width: 220px;
+    width: 380px;
     float: left;
-    margin: 0 20px 20px 0;
+    margin: 0 52px 0px 0;
 }
+.div-sobre{
+    background-color: #e0e0e0;
+    width: 130%;
+    padding-top: 14%;
+    padding-bottom: 135px;
+    padding-right: 74px;
+}
+
+.line{
+    border: double;
+    border-bottom: 1px;
+    height: 1px;
+    width: 90%;
+    margin: auto;
+}
+.line2{
+    border-bottom: 1px;
+    height: 1px;
+    width: 100%;
+    margin: auto;
+}
+
 
 .map {
-    padding: em 0;
-    background: linear-gradient(#FFFFFE, #ffbb00);
+    display: block;
+    color: #994f4f;
 }
 
-.mapa-conteudo {
-    width: 550px;
-    margin: 0 auto;
+.titulo-map{
+    font: initial;
+    font-style: oblique;
+    text-decoration: underline;
+    background-color: #f0e3d7;
+    text-align: center;
+    font-size: 45px;
+    margin: 1cm 8cm 1cm 0;
+    clear: left;
 }
+
 
 .map p {
-    margin: 0 0 2em;
+    margin: 2% 30% 2em 11%;
     text-align: center;
+}
+iframe {
+    border: 0;
+    width: 100%;
+    height: 500px;
 }
 
 .beneficios {
     padding: 3em 0;
-    background: #ffbb00;
+    background: #f0e3d7;
+    text-decoration: underline;
+    font-size: 45px;
+}
+
+.titulo-beneficio{
+    font: initial;
+    font-style: oblique;
+    text-decoration: underline;
+    background-color: #f0e3d7;
+    text-align: center;
+    font-size: 45px;
+    margin: 1cm 8cm 1cm 0;
+    clear: left;
 }
 
 .conteudo-beneficios{
-    width: 780px;
-    height: 250px;
-    margin: 0 auto;
+    width: 66%;
+    height: 83%;
+    margin: 0 0 5% 14%;
+    text-align: start;
 }
 
 .lista-beneficio{
@@ -139,17 +217,60 @@ ul{
 }
 
 .itens:before {
-    content: ">";
+    content: "- ";
 }
 
-.itens:first-child {
-    font-weight: bold;
-}
+
 .video{
-    width: 560px;
-    margin: 2em auto;
+    width: 100%;
+    margin: 2em auto 50px 0;
+    padding-left: 40px;
+    padding-right: 40px;
  }
 footer{
+    color: #e0e0e0;
     text-align: center;
-    background: #ffffff;
+    background: #444;
 }
+
+
+
+/* PAGINA COMO TRABALHAMOS*/
+.banner-comotrabalhamos {
+    position: absolute;
+        width: 100%;
+        height: 400px;
+        object-fit: cover; 
+}
+.container-servico {
+    text-align: center;
+    background: #444;
+    color: white;
+    padding-top: 470px;
+    padding-bottom: 150px;
+    
+  }
+
+  .container-servico h2 {
+    font-size: 30px;
+    margin-bottom: 70px;
+  }
+
+  .servico article {
+    width: 30%;
+  }
+  
+  .servico {
+    display: flex;
+    justify-content: space-around;
+  }
+  .servico article img {
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 10px;
+    height: 230px;
+  }
+
+  .servico article p{
+    margin-top: 20px;
+  }
