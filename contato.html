@@ -10,28 +10,30 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-contato">
         <h2>
             <img src="LogoAtualizado.png" title="Site Guayacán Sistemas" href="index.html" class="logo"></img>
         </h2>
         <div class="logo_guayacan">
-
-
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="comoTrabalhamos.html">Como trabalhamos</a></li>
-                    <li><a href="oQueFazemos.html">O que fazemos</a></li>
+                    <!-- <li><a href="oQueFazemos.html">O que fazemos</a></li> -->
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
+            
         </div>
+        
     </header>
 
-    <main>
+   
+
+    <main class="contato_texto">
         <form name="frmContato" method="get" action="mailto:teste@gmail.com" target="_blank">
             <fieldset>
-                <legend> Dados pessoais</legend>
+                <legend class="contato-titulo"> Dados pessoais</legend>
                 <label for="nomesobrenome">Nome e sobrenome</label>
                 <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
 
@@ -44,7 +46,7 @@
                 <label for="mensagem">* Mensagem</label>
                 <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
 
-                <label for="contato">Como prefere o nosso contato?
+                <label class="chk" for="contato">Como prefere o nosso contato?
                     <input type="radio" value="radio-mail" name="Contato"> Email
                     <input type="radio" value="radio-mail" name="Contato"> Telefone
                     <input type="radio" value="radio-mail" name="Contato"> Whatsapp
@@ -62,7 +64,8 @@
                 </label>
 
                 <br>
-
+                
+                <button class="send">Enviar</button>
 
 
 
@@ -71,37 +74,6 @@
 
 
     </main>
-
-    <!--Banner-->
-    <img class="banner-comotrabalhamos" src="comotrabalhamos1.jpg">
-
-    <!-- cards de serviço  -->
-    <div class="container-servico">
-        <h2>Serviços</h2>
-        <section class="servico">
-            <article>
-                <h3>DESENHO TÉCNICO DE INFRAESTRUTURA</h3>
-                <img src="Desenho Infra.png" alt="corrida de rua de 5k" title="corrida de rua" />
-
-                <p>A Guayacan Sistemas realiza o desenho técnico da infraestrutura necessária para implementação dos
-                    sistemas contratados e também faz todo o cabeamento de áudio, vídeo , antena de TV, rede e automação
-                </p>
-            </article>
-
-            <article>
-                <h3>HOME THEATER</h3>
-                <img src="automacao-residencial-home-theater.jpg" alt="maratona" title="maratona" />
-                <p>Viva uma experiência sensorial completamente
-                    diferente. Com tecnologia de áudio e vídeo de última geração, levamos aos nossos clientes o
-                    verdadeiro cinema em casa.</p>
-            </article>
-            <article>
-                <h3>SISTEMA DE MONITORAMENTO</h3>
-                <img src="monitoramento.jpeg" alt="ultra maratona" title="ultra maratona" />
-            </article>
-        </section>
-    </div>
-
 
 
     <footer>
