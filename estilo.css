@@ -327,6 +327,14 @@ footer{
     margin-bottom: 10%;
   }
 
+  .whatsapp-link {
+    color: #e0e0e0;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: beige;
+  }
+
   .input-padrao{
     display: block;
     margin: 0 0 20px;
@@ -342,6 +350,7 @@ footer{
     width: 40%;
     padding: 15px 0;
     margin-bottom: 20px;
+    margin-top: 20px;
     background: rgb(159, 156, 156);
     color: black;
     font-weight: bold;
@@ -354,4 +363,4 @@ footer{
     background: #ffe100;
     transform: scale(1.2);
   }
- 
+  
