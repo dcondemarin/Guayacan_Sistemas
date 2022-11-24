@@ -36,6 +36,7 @@ header img, .navbar-brand img {
 main {
     background-color: #444;
     text-align: center;
+    
 }
 /*Estilização da sessão NAV (navegação da página)*/
 
@@ -118,7 +119,7 @@ ul{
     background-color: #f0e3d7;
     text-align: justify;
     margin-left: 17%;
-    margin-top: 420px;
+    margin-top: 394px;
     
 }
 
@@ -135,7 +136,7 @@ ul{
 .div-sobre{
     background-color: #e0e0e0;
     width: 130%;
-    padding-top: 14%;
+    padding-top: 20%;
     padding-bottom: 135px;
     padding-right: 74px;
 }
@@ -364,3 +365,54 @@ footer{
     transform: scale(1.2);
   }
   
+.cardss {
+    text-align: center;
+    background: #444;
+    color: rgb(0, 0, 0);
+   display: flex;
+    padding-bottom: 150px;
+}
+
+.mainrel{
+    background-color: #444;
+    padding: 100px 0;
+    text-align: center;
+    margin-top: -3px;
+}
+
+.mainsect {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.h {
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 20px 0;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.mainsect {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.bordasimg {
+    border-style: double;
+    border-color: #e0e0e0;
+}
+
+.mainrelh1 {
+    text-align: center;
+}
+
+.divrelatorio{
+    margin: 15%;
+    
+}
